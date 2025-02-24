@@ -1,0 +1,108 @@
+/* ------------ hero container ----------  */
+.hero {
+    width: 100%;
+    padding: 50px 20px;
+    margin-bottom: 100px;
+}
+
+/* -------- hero name -------- */
+.hero h1 {
+    max-width: max-content;
+    width: 100%;
+    margin-top: 90px;
+    font-size: 100px;
+    background: linear-gradient(270deg, #2EBCBF 10%, #EB60E2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -------- hero job -------- */
+.hero h1 span {
+    font-size: 70px;
+}
+
+/* -------- hero definition -------- */
+.hero p {
+    width: 85%;
+    font-size: 27px;
+    line-height: 40px;
+}
+
+/* ------------------------- Responsive design -------------  */
+/* @media screen and (max-width:1440px) {
+
+} */
+@media screen and (max-width:1280px) {
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .hero h1 span {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero h1 span {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:768px) {
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero h1 span {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        padding: 50px 0px;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h1 span {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .hero h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .hero h1 span {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

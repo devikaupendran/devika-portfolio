@@ -1,0 +1,299 @@
+.show-projects-page {
+    width: 100%;
+    margin-top: 80px;
+    color: black;
+}
+
+/* ------------------------ all project display section -------------------- */
+
+.allProjects {
+    width: 100%;
+    color: white;
+    padding: 40px 0;
+}
+
+.allProjects img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.allProjects img:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------Overlay effect---------------- */
+.imageOverlay {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.352) 0px 1px 3px, rgba(255, 255, 255, 0.384) 0px 1px 2px;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageOverlay:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.imageOverlay:hover .title-overlay {
+    opacity: 1;
+}
+
+.title-overlay p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*---------------- Styling for the buttons----------------  */
+.viewBtn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.custom-project-btn {
+    border: 1px solid rgba(255, 255, 255, 0.509);
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* ------------------ Video container ---------------  */
+.video-container {
+    width: 100%;
+    height: 70vh;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.video-container #video {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+/* ------------------------------------- Modal -------------------------- */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    color: black;
+}
+
+.modal {
+    width: 100%;
+    height: max-content;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.modal-content {
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* ----------------  Animation for video and image modal based on condition ---------------------  */
+.video-modal {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.image-modal {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* --------------------------------   Style for Modal Body of images and videos -------------------------------- */
+.modal-content.image-modal {
+    background-color: #fff;
+    color: black;
+}
+
+.modal-content.video-modal {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.modal-title {
+    font-size: 30px;
+    background: linear-gradient(264deg, #ed3de1 -10.09%, #5db8f0 106.28%);
+    background-clip: clip;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ------------ carousal inside the modal ------------ */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    position: relative;
+}
+
+.carousel-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 8%;
+}
+
+/* ---------------- custumize button for previous and next button ---------------- */
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 40px;
+    width: 15%;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/* ------------------ about project like description, link etc ------------------ */
+.project-details div {
+    text-align: center;
+    box-shadow: 0 0 8px 0 rgba(0, 72, 255, 0.45) inset;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.project-details div b {
+    margin-right: 10px;
+}
+
+.project-details p {
+    overflow-y: scroll;
+    font-size: 14px;
+    max-height: 300px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.project-details p strong {
+    font-size: 15px
+}
+
+/*---------------- Hide scrollbar but keep scroll functionality ----------------*/
+.project-details p::-webkit-scrollbar {
+    display: none;
+}
+
+.project-details p::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.project-details a {
+    color: blue;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:480px) {
+    .modal-dialog {
+        max-width: 100%;
+        height: 80vh;
+    }
+}

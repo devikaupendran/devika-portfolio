@@ -1,0 +1,165 @@
+/* ---------------- Navbar Styles ---------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+/* ---------------- stylings for links ---------------- */
+
+a {
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+}
+
+
+/* ---------------- Navigation menus ---------------- */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-mobile-close {
+    display: none;
+}
+
+.nav-mobile-open {
+    display: none;
+}
+
+/* ----------------Underline for the active menu item ---------------- */
+.nav-menu li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 0.7px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+/* ---------------- Hover effect for all menu items ----------------*/
+.nav-menu li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 0.7px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(235, 96, 226, 1) 19%, rgba(46, 188, 191, 1) 86%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li:hover::after {
+    transform: scaleX(1);
+}
+
+/* ---------------- Connect with me button ---------------- */
+.nav-connect {
+    --color: #2EBCBF;
+    --hover: #EB60E2;
+}
+
+.nav-connect {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.nav-connect:hover {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.nav-connect {
+    color: var(--color);
+    transition: 0.65s;
+}
+
+.nav-connect:hover {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.nav-connect {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2%;
+    cursor: pointer;
+}
+
+/* ---------------- Media Query for Mobile Devices ---------------- */
+@media (max-width: 1100px) {
+
+    /* Navbar adjustments */
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    /* Adjusting the nav-menu for mobile */
+    .nav-menu {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    /* Showing mobile open button */
+    .nav-mobile-open {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Hide close button for mobile by default */
+    .nav-mobile-close {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Make the Connect button more mobile-friendly */
+    .nav-connect {
+        display: none;
+    }
+
+    /* Active link styles for mobile */
+    li.active::after {
+        bottom: -4px;
+    }
+
+    /* Displaying nav menu when mobile menu is opened */
+    .nav-menu.open {
+        display: flex;
+    }
+}

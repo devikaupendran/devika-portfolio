@@ -1,0 +1,136 @@
+.about {
+    width: 100%;
+    border: 1.5px solid rgba(235, 96, 226, 0.5);
+    padding: 30px 0;
+    position: relative;
+    border-radius: 20px;
+    margin: 18% 0;
+}
+
+/* ----- About me title ----- */
+.about-title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ---------- About left & right container ---------- */
+.about-sections {
+    gap: 80px;
+    height: 400px;
+}
+
+/* ----- About left  section----- */
+.about-left {
+    width: 30%;
+    position: relative;
+}
+
+.image-section {
+    width: 100%;
+    position: relative;
+}
+
+/* ----- Image in about ----- */
+.about-left img {
+    width: 380px;
+    height: 380px;
+    z-index: 3;
+    position: relative;
+}
+
+/* ---------- Loader creation and animation behind the image ---------- */
+.about-left .loader {
+    position: absolute;
+    top: 0;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: linear-gradient(#EB60E2, #84cdfa, #5ad1cd);
+    box-shadow:
+        0 4px 6px rgba(235, 96, 226, 0.5),
+
+        0 5px 10px rgba(132, 205, 250, 0.5),
+
+        0 6px 13px rgba(90, 209, 205, 0.5);
+    animation: animate 6s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------- About right  section ---------- */
+.about-right {
+    width: 50%;
+    gap: 40px;
+}
+
+.about-right p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    .about-left img {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .about-left .loader {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* ----- Mobile / Tablet Breakpoint ----- */
+@media (max-width: 992px) {
+
+    .about-sections {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+        height: auto;
+    }
+
+    .about-left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-section {
+        width: max-content;
+    }
+
+    .about-left img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-left .loader {
+       width: 250px;
+       height: 250px;
+    }
+
+    .about-right {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .about-right p {
+        max-width: 100%;
+        font-size: 19px;
+        text-align: center;
+    }
+}
