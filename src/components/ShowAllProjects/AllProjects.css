@@ -255,7 +255,7 @@
     text-align: center;
     box-shadow: 0 0 8px 0 rgba(0, 72, 255, 0.45) inset;
     padding: 10px 20px;
-    width: 50%;
+    width: 100%;
 }
 
 .project-details div b {
@@ -291,20 +291,31 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width:770px) {
+    .button-30 {
+        width: 80px;
+    }
+}
+
 @media screen and (max-width:480px) {
     .modal-dialog {
         max-width: 100%;
         height: 80vh;
     }
 
-    .modal-content{
+    .modal-content {
         padding: 0;
     }
 
     .modal-overlay {
         padding: 0;
     }
+
     .video-container {
         padding: 0;
+    }
+
+    .button-30 {
+        width: 80px;
     }
 }
