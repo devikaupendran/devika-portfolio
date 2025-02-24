@@ -124,12 +124,21 @@ li {
 
     /* Adjusting the nav-menu for mobile */
     .nav-menu {
-        display: none;
+        display: flex;
         /* Hidden by default */
         flex-direction: column;
-        gap: 20px;
-        font-size: 18px;
-        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: #000000;
+        height: 100%;
+        width: 350px;
+        z-index: 100;
+        transition: right 0.5s ease;
+        right: -350px;
+        padding-top: 30px;
     }
 
     /* Showing mobile open button */
@@ -138,12 +147,16 @@ li {
         font-size: 30px;
         color: white;
         cursor: pointer;
+        right: 0;
     }
 
     /* Hide close button for mobile by default */
     .nav-mobile-close {
         display: block;
-        font-size: 30px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 30px;
         color: white;
         cursor: pointer;
     }

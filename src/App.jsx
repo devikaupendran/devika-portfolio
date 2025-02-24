@@ -4,7 +4,6 @@ import About from './components/About/About'
 import Hero from './components/Hero/Hero'
 import Skills from './components/Skills/Skills'
 import Computer from './components/Computer/Computer'
-// import Service from './components/Service/Service'
 import Projects from './components/Projects/Projects'
 import AllProjects from './components/ShowAllProjects/AllProjects';
 import CustomNavbar from './components/Navbar/CustomNavbar'
@@ -14,6 +13,7 @@ import Animation from './components/Animation/Animation'
 
 import { motion } from 'framer-motion';
 import { Routes, Route, useLocation } from 'react-router-dom';  // Import Router components
+import Services from './components/Services/Services'
 
 
 
@@ -69,19 +69,17 @@ const App = () => {
                             transition={{ duration: 1.5 }}
                             viewport={{ once: false }}
                         >
-                            <Computer />
+                            <Services />
                         </motion.div>
 
-                        {/* 
                         <motion.div
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0, y: 90 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.5 }}
                             viewport={{ once: false }}
-                            className="h-screen flex items-center justify-center"
                         >
-                            <Service />
-                        </motion.div> */}
+                            <Computer />
+                        </motion.div>
 
                         <motion.div
                             initial={{ opacity: 0, y: 90 }}
@@ -104,7 +102,16 @@ const App = () => {
                             <Contact />
                         </motion.div>
 
-                        <Animation />
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.5 }}
+                            viewport={{ once: false }}
+                            className="h-screen flex items-center justify-center"
+                        >
+                            <Animation />
+                        </motion.div>
+
                         <Footer />
                     </>
                 } />

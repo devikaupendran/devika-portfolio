@@ -1,9 +1,10 @@
 import React from 'react'
+import './Animation.css'
 
 const Animation = () => {
   return (
-    <div>
-      
+    <div className='animation'>
+      <div className='boo'></div>
     </div>
   )
 }
