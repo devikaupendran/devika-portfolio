@@ -1,6 +1,6 @@
 .computer {
     width: 100%;
-    margin: 12% 10px;
+    margin: 25% 10px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -28,7 +28,7 @@
     object-fit: contain;
     animation: appear2 4s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 50%;
 }
 
 @keyframes appear1 {
@@ -59,6 +59,7 @@
     .computer {
         display: flex;
         flex-direction: column;
+        gap: 120px;
     }
 
     .computer-left {
