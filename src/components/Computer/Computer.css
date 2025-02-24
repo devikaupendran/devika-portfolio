@@ -1,8 +1,10 @@
 .computer {
     width: 100%;
     margin: 12% 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
-
 .computer-left {
     width: 40%;
 }
@@ -50,5 +52,20 @@
     to {
         opactity: 1px;
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .computer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .computer-left {
+        width: 100%;
+    }
+    
+    .computer-right {
+        width: 100%;
     }
 }

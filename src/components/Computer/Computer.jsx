@@ -5,7 +5,7 @@ import robot from '../../assets/robot.png'
 
 const Computer = () => {
     return (
-        <div className='container-fluid computer d-flex justify-content-between align-items-end'>
+        <div className='container-fluid computer '>
             <div className="computer-left">
                 <img src={robot} alt="robot image" />
             </div>
