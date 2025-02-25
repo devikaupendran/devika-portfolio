@@ -256,13 +256,13 @@
     display: flex;
     justify-content: space-around;
     gap: 15px;
-    margin: 15px 0;
+    margin: 25px 0;
     width: 100%;
     overflow-x: auto;
 }
 
 .project-details .technologies span {
-    padding: 5px;
+    padding: 8px 10px;
     box-shadow: rgb(178, 195, 211) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.653) -3px -3px 6px 1px inset, rgb(178, 195, 211) 3px 3px 6px 0px inset ;
 }
 
@@ -275,6 +275,7 @@
 
 .project-details .reference b {
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .project-details p {
@@ -300,6 +301,7 @@
 
 .project-details a {
     color: blue;
+    font-size: 20px;
 }
 
 .project-details a:hover {
