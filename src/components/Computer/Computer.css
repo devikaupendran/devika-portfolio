@@ -40,7 +40,7 @@
     }
 
     to {
-        opactity: 1px;
+        opacity: 1px;
         transform: translateX(0);
     }
 }
@@ -52,7 +52,7 @@
     }
 
     to {
-        opactity: 1px;
+        opacity: 1px;
         transform: translateX(0);
     }
 }

@@ -123,8 +123,17 @@ const AllProjects = () => {
                                     {/*-------------- Project Details Section if not showing video --------------*/}
                                     {!showVideo && (
                                         <div className="project-details mt-3">
+                                            <div className='technologies'>
+                                                {
+                                                    selectedProject.technologies.map((item, index) => {
+                                                        return(
+                                                            <span>{item}</span>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                             <p><strong>Description:</strong> {selectedProject.description}</p>
-                                            <div><b>Reference: </b><a href={selectedProject.reference} target="_blank" rel="noopener noreferrer">GitHub Link</a></div>
+                                            <div className='reference'><b>Reference: </b><a href={selectedProject.reference} target="_blank" rel="noopener noreferrer">GitHub Link</a></div>
                                         </div>
                                     )}
 

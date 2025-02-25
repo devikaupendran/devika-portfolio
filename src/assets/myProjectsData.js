@@ -85,6 +85,14 @@ import todo2 from '../assets/todo2.png'
 import todo3 from '../assets/todo3.png'
 import todo4 from '../assets/todo4.png'
 
+import bookstore1 from '../assets/bookstore1.png'
+import bookstore2 from '../assets/bookstore2.png'
+import bookstore3 from '../assets/bookstore3.png'
+import bookstore4 from '../assets/bookstore4.png'
+import bookstore5 from '../assets/bookstore5.png'
+import bookstore6 from '../assets/bookstore6.png'
+import bookstore7 from '../assets/bookstore7.png'
+
 
 // ------------------------------ video ------------------------------ 
 import algowizardVideo from '../assets/algowizardVideo.mp4'
@@ -98,6 +106,8 @@ import shopEaseVideo from '../assets/shopEaseVideo.mp4'
 import shoppingCartVideo from '../assets/shoppingCartVideo.mp4'
 import todoVideo from '../assets/todoVideo.mp4'
 import keysafeVideo from '../assets/keysafeVideo.mp4'
+import bookstore from '../assets/bookstore.mp4'
+
 
 export const myProjects = [
     {
@@ -105,6 +115,7 @@ export const myProjects = [
         appName: "Prescripto",
         appImg: appointmentBooking1,
         videoUrl: appointmentBookingVideo,
+        technologies: ['Mongodb', 'Express.js', 'React.js', 'Node.js', 'Tailwindcss'],
         carousal: [appointmentBooking1, appointmentBooking2, appointmentBooking3, appointmentBooking4, appointmentBooking5, appointmentBooking6, appointmentBooking7, appointmentBooking8, appointmentBooking9, appointmentBooking10, appointmentBooking11, appointmentBooking12, appointmentBooking13, appointmentBooking14, appointmentBooking15, appointmentBooking16, appointmentBooking17, appointmentBooking18, appointmentBooking19, appointmentBooking20, appointmentBooking21, appointmentBooking22, appointmentBooking23, appointmentBooking24, appointmentBooking25, appointmentBooking26, appointmentBooking27],
         description: "A full-stack application allowing users to search doctors by department and book appointments. Features include separate login pages and dashboardsfor users, doctors, and admins to manage profiles, appointments, and payments. Integrated Razorpay for secure payments, used Cloudinary for image storage, and Axios for API requests.",
         reference: "https://github.com/devikaupendran/Doctor-Appointment-Booking-App-MERN"
@@ -115,6 +126,7 @@ export const myProjects = [
         appName: "KeySafe",
         appImg: keysafe1,
         videoUrl: keysafeVideo,
+        technologies: ['Mongodb', 'Express.js', 'React.js', 'Node.js', 'Tailwindcss'],
         carousal: [keysafe1, keysafe2, keysafe3, keysafe4, keysafe5, keysafe6],
         description: "A secure, full-stack authentication app with JWT for user sign-up, login, and access to protected routes. Features React Router for navigation and dynamic user routing based on authentication status.",
         reference: "https://github.com/devikaupendran/KeySafe-MERN-Authentication"
@@ -125,32 +137,39 @@ export const myProjects = [
         appImg: bmi1,
         videoUrl: bmiVideo,
         carousal: [bmi1, bmi2, bmi3, bmi4],
+        technologies: ['React.js', 'Tailwindcss'],
         description: "A BMI calculator that categorizes weight status based on user input (weight/height). Provides personalized feedback, along with a guide to healthy BMI ranges, aimed at helping users manage their health.",
         reference: "https://github.com/devikaupendran/BMI-calculator-react"
     },
+
     {
         _id: 4,
-        appName: "Employee Details Management",
-        appImg: employeeDetails1,
-        videoUrl: employeeDetailssVideo,
-        carousal: [employeeDetails1, employeeDetails2, employeeDetails3, employeeDetails4, employeeDetails5],
-        description: "A dynamic, responsive web app for managing employee records. Users can add, edit, delete, and view data with real-time updates displayed in a table. Features include form validation, local storage data handling, and search functionality, with popup alerts for user actions.",
-        reference: "https://github.com/devikaupendran/Employee-details-management"
-    },
-    {
-        _id: 5,
         appName: "Food Recipe App",
         appImg: food1,
         videoUrl: foodVideo,
+        technologies: ['React.js', 'SCSS'],
         carousal: [food1, food2, food3, food4, food5, food6],
         description: "A responsive food recipe app built with React, featuring API calls to fetch recipes by category. It includes a favourites section, a categorized recipe section, pagination, popup modals for detailed views and React router for navigation. ",
         reference: "https://github.com/devikaupendran/foodMenu"
     },
+
+    {
+        _id: 5,
+        appName: "Employee Details Management",
+        appImg: employeeDetails1,
+        videoUrl: employeeDetailssVideo,
+        technologies: ['HTML', 'CSS', 'JS', 'Bootstrap'],
+        carousal: [employeeDetails1, employeeDetails2, employeeDetails3, employeeDetails4, employeeDetails5],
+        description: "A dynamic, responsive web app for managing employee records. Users can add, edit, delete, and view data with real-time updates displayed in a table. Features include form validation, local storage data handling, and search functionality, with popup alerts for user actions.",
+        reference: "https://github.com/devikaupendran/Employee-details-management"
+    },
+
     {
         _id: 6,
         appName: "Shopping Cart",
         appImg: shoppingCart1,
         videoUrl: shoppingCartVideo,
+        technologies: ['HTML', 'CSS', 'JS'],
         carousal: [shoppingCart1, shoppingCart2, shoppingCart3, shoppingCart4, shoppingCart5, shoppingCart6],
         description: "A responsive shopping cart built with Javascript, where user can add products to their shopping cart, and view the cart’s content in real time.The cart allows users to increase or decrease item quantities, remove items, and see the total price dynamically updated.",
         reference: "https://github.com/devikaupendran/shopping-cart-js"
@@ -161,41 +180,57 @@ export const myProjects = [
         appImg: todo1,
         videoUrl: todoVideo,
         carousal: [todo1, todo2, todo3, todo4],
+        technologies: ['HTML', 'CSS', 'JS', 'Bootstrap'],
         description: "This is a simple to-do list application built with JavaScript. Users can add, edit, and delete tasks easily, keeping track of their daily activities. The app allows tasks to be marked as completed or pending, providing a clear overview of what’s done and what’s left to do.",
         reference: "https://github.com/devikaupendran/to-do-list-JS"
     },
+
     {
         _id: 8,
+        appName: "Book Store",
+        appImg: bookstore1,
+        videoUrl: bookstore,
+        technologies: ['Mongodb', 'Express.js', 'React.js', 'Node.js', 'Tailwindcss'],
+        carousal: [bookstore1, bookstore2, bookstore3, bookstore4, bookstore5, bookstore6, bookstore7],
+        description: "The bookstore project is a web application that allows users to manage and interact with a collection of books.Users can  create, view, update, and delete books from the list.",
+        reference: "https://github.com/devikaupendran/bookstore"
+    },
+    {
+        _id: 9,
         appName: "Encode Decode Message",
         appImg: encodeDecode1,
         videoUrl: encodeDecodeVideo,
+        technologies: ['HTML', 'CSS', 'JS', 'Bootstrap'],
         carousal: [encodeDecode1, encodeDecode2, encodeDecode3],
         description: "This project provides an encode-decode tool built with JavaScript that allows users to easily encode and decode messages.It offers a simple interface where users can input text, It allows users to quickly convert their message into encoded formats and vice versa.",
         reference: "https://github.com/devikaupendran/encode-decode-message"
     },
     {
-        _id: 9,
+        _id: 10,
         appName: "Shopease",
         appImg: shopease1,
         videoUrl: shopEaseVideo,
+        technologies: ['HTML', 'CSS', 'JS'],
         carousal: [shopease1, shopease2, shopease3, shopease4, shopease5],
         description: "This is a UI project for an online store, created to offer a smooth shopping experience. It has features like product listings, a shopping cart, and an easy-to-use layout.",
         reference: "https://github.com/devikaupendran/ShopEase-UI"
     },
     {
-        _id: 10,
+        _id: 11,
         appName: "Quiz App",
         appImg: quizApp1,
         videoUrl: quizAppVideo,
         carousal: [quizApp1, quizApp2, quizApp3, quizApp4, quizApp5],
+        technologies: ['HTML', 'CSS', 'JS', 'Bootstrap'],
         description: "This is a UI project for an online store, created to offer a smooth shopping experience. It has features like product listings, a shopping cart, and an easy-to-use layout.",
         reference: "https://github.com/devikaupendran/ShopEase-UI"
     },
     {
-        _id: 11,
+        _id: 12,
         appName: "Algowizard",
         appImg: algowizard1,
         videoUrl: algowizardVideo,
+        technologies: ['HTML', 'CSS', 'JS', 'Bootstrap'],
         carousal: [algowizard1, algowizard2, algowizard3, algowizard4],
         description: "The platform allows users to select and visualize different algorithms, such as sorting and searching algorithms, in real-time.",
         reference: "https://github.com/devikaupendran/algowizard"

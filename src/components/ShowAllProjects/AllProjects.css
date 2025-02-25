@@ -251,14 +251,29 @@
 }
 
 /* ------------------ about project like description, link etc ------------------ */
-.project-details div {
-    text-align: center;
-    box-shadow: 0 0 8px 0 rgba(0, 72, 255, 0.45) inset;
+
+.project-details .technologies{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 15px 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.project-details .technologies span {
+    padding: 5px;
+    box-shadow: rgb(178, 195, 211) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.653) -3px -3px 6px 1px inset, rgb(178, 195, 211) 3px 3px 6px 0px inset ;
+}
+
+.project-details .reference {
+    /* text-align: center */
+    /* box-shadow: 0 0 8px 0 rgba(0, 72, 255, 0.45) inset;  */
     padding: 10px 20px;
     width: 100%;
 }
 
-.project-details div b {
+.project-details .reference b {
     margin-right: 10px;
 }
 
