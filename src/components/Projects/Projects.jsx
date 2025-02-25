@@ -20,7 +20,7 @@ const Projects = () => {
                         return (
                             <img key={index} src={item.appImg} />
                         )
-                    }).slice(0, 2)
+                    }).slice(0, 3)
                 }
             </div>
 
